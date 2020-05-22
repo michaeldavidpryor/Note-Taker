@@ -1,14 +1,15 @@
 {
-  "name": "note-taker",
+  "name": "Note-Taker",
   "version": "1.0.0",
-  "description": "",
-  "main": "server.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "",
-  "license": "ISC",
   "dependencies": {
-    "express": "^4.16.4"
+    "@fortawesome/fontawesome-free": "^5.13.0",
+    "bootswatch": "^4.5.0",
+    "debug": "^4.1.1",
+    "express": "^4.17.1",
+    "jquery": "^3.5.1",
+    "morgan": "^1.10.0"
+  },
+  "devDependencies": {
+    "chalk": "^4.0.0"
   }
 }
