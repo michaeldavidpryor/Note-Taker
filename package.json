@@ -2,20 +2,15 @@
   "name": "note-taker",
   "version": "1.0.0",
   "dependencies": {
-    "bootswatch": "^4.5.0",
     "chalk": "^4.0.0",
     "debug": "^4.1.1",
     "express": "^4.17.1",
-    "jquery": "^3.5.1",
     "nodemon": "^2.0.4",
     "uuid": "^8.1.0"
   },
+
   "scripts": {
-    "test": "echo \"Error:no test specified\"&& exit 1",
-    "start": "set DEBUG=app & nodemon server.js"
-  },
-  "devDependencies": {
-    "chalk": "^4.0.0"
+    "start": "server.js"
   },
   "nodemonConfig": {
     "restartable": "rs",
