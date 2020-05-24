@@ -2,13 +2,13 @@
   "name": "note-taker",
   "version": "1.0.0",
   "dependencies": {
-    "@fortawesome/fontawesome-free": "^5.13.0",
     "bootswatch": "^4.5.0",
+    "chalk": "^4.0.0",
     "debug": "^4.1.1",
     "express": "^4.17.1",
     "jquery": "^3.5.1",
-    "morgan": "^1.10.0",
-    "nodemon": "^2.0.4"
+    "nodemon": "^2.0.4",
+    "uuid": "^8.1.0"
   },
   "scripts": {
     "test": "echo \"Error:no test specified\"&& exit 1",
@@ -27,6 +27,17 @@
       "NODE_ENV": "development",
       "PORT": 4000
     }
-  }
+  },
+  "description": "A nice note taking application",
+  "main": "server.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/michaeldavidpryor/Note-Taker.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/michaeldavidpryor/Note-Taker/issues"
+  },
+  "homepage": "https://github.com/michaeldavidpryor/Note-Taker#readme"
 }
-
