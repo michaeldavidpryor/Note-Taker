@@ -14,13 +14,13 @@ app.use(express.static(path.join(__dirname, '/public')));
 require('./routes/apiRoutes.js')(app);
 require('./routes/htmlRoutes.js')(app);
 
-// const server = http.createServer((req, res) => {
-//    res.statusCode = 200;
-//    res.setHeader('Content-Type', 'text/html');
-//    res.end('<h1>Note Taker</h1>');
-// });
+const server = http.createServer((req, res) => {
+   res.statusCode = 200;
+   res.setHeader('Content-Type', 'text/html');
+   res.end('<h1>Note Taker</h1>');
+});
 
 app.listen(port, () => {
-   console.log(`listening on port ${chalk.cyanBright(port)}`);
+  console.log(`listening on port ${chalk.cyanBright(port)}`);
 });
 
