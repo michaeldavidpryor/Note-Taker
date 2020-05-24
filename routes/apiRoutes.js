@@ -18,37 +18,25 @@ module.exports = function (app) {
         dB.push(nNote)
 
         fs.writeFile('./db/db.json', JSON.stringify(dB, null, 2), err => {
-            if (err) throw err;
 
-            alert('Note created successfully')
+            if (err) throw err;
+            console.log('saved')
         });
         res.json(dB);
     });
 
 
-    // fs.readFile('./db/db.json', 'utf8', (err, data) => {
-    //     if (err) throw err;
-    //
-    //     let aNotes = JSON.parse(data)
-    //
-    //     aNotes.push(nNote)'
-
-
     app.delete('/api/notes:id', (req, res) => {
+        let nID = req.params.id, aNotes = JSON.parse(dB), anNotes = aNotes.filter(note => note.id !== nID)
 
         fs.readFile('./db/db.json', (err) => {
             if (err) throw err;
 
-            let nID = req.params.id
-            dB = dB.filter(function (note) {
-                return note.id !== nID;
-            });
-
-            fs.writeFile('./db/db.json', JSON.stringify(dB, null, 2), err => {
+            fs.writeFile('./db/db.json', JSON.stringify(anNotes, null, 2), err => {
                 if (err) throw err;
-                alert('note deleted')
+                res.json(dB)
+                console.log('deleted')
             });
-            res.json(dB)
         });
     });
 };

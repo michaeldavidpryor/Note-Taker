@@ -1,9 +1,9 @@
 # Note-Taker
 
 ## Description
-A very poorly executed app on my part 
+Keep your notes...forever. 
 ## Features
-It has anti-features really 
-## Support (Yes, Please)
+This web app saves your notes even when you close up shop.
+## Support 
 
 [![Avatar](https://avatars.githubusercontent.com/michaeldavidpryor?s=200)](http://github.com/michaeldavidpryor) 
