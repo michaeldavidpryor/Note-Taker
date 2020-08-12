@@ -3,7 +3,6 @@
 ## Description
 Keep your notes...forever. 
 
-----
 
 ## Features
 This web app saves your notes even when you close up shop.
